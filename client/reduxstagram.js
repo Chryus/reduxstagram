@@ -8,4 +8,7 @@ import css from './styles/style.styl';
 // components
 import Main from './components/Main'
 
-render(<Main/>, document.getElementById('root'));
+// routes
+import routes from './config/routes'
+
+render(routes, document.getElementById('root'));
