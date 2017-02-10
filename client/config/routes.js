@@ -8,7 +8,7 @@ module.exports = (
   <Router history={browserHistory}>
     <Route path='/' component={Main}>
       <IndexRoute component={PhotoGrid}></IndexRoute>
-      <Route path='photo/:photoId' component={Single}/>
+      <Route path='posts/:id' component={Single}/>
     </Route>
   </Router>
 )
