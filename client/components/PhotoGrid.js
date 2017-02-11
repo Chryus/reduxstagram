@@ -19,7 +19,7 @@ class PhotoGrid extends React.Component {
     //return this.puke(this.props.posts);
     return (
       <div className="photo-grid">
-        {this.props.posts.map((post, i) => <Photo />)}
+        {this.props.posts.map((post, i) => <Photo {... this.props} />)}
       </div>
     )
   }
