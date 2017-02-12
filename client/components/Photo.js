@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Photo extends React.Component {
   constructor(props) {
@@ -6,9 +7,14 @@ class Photo extends React.Component {
   };
 
   render() {
+    const { post, i, comments } = this.props
     return (
       <figure className="grid-figure">
-        I am a photo!
+        <div className="grid-photo-wrap">
+          <Link to={`/posts/{$post.code}`}>
+            {post.caption}
+          </Link>
+        </div>
       </figure>
     )
   }
