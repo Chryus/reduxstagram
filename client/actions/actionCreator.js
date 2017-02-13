@@ -1,5 +1,4 @@
 export const increment = (index) => {
-  console.log("INCREMENT")
   return {
     type: "INCREMENT_LIKES",
     index
