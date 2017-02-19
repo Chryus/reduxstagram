@@ -12,7 +12,7 @@ module.exports = (
     <Router history={history}>
       <Route path='/' component={App}>
         <IndexRoute component={PhotoGrid}></IndexRoute>
-        <Route path='posts/:id' component={Single}/>
+        <Route path='posts/:postId' component={Single}/>
       </Route>
     </Router>
   </Provider>
